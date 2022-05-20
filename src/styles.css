@@ -31,7 +31,7 @@ body {
 
 main {
   background-color: #ffffff;
-  max-width: 700px;
+  max-width: 600px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@ h1 {
 }
 
 .instructions {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
   color: #3a3a3a;
   text-align: center;
@@ -62,8 +62,8 @@ h1 {
   border: 2px solid #252525;
   border-radius: 5px;
   box-shadow: 1.5px 1.5px 0px 1.5px #252525;
-  height: 75px; 
-  width: 75px;
+  height: 60px; 
+  width: 60px;
   cursor: pointer;
 }
 
@@ -79,7 +79,7 @@ h1 {
   background-color: #252525;
   color: white;
   font: inherit;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius: 0.5rem;
   padding: 1rem;
   padding-left: 1.5rem;
