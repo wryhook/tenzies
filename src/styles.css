@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Anybody', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  background: linear-gradient( 103.3deg,  rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% );
+  background-size: 300% 100%;
+  animation: gradient 10s linear infinite;
+  animation-direction: alternate;
+  padding: 20px;
+  font-family: 'Anybody', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #252525;
+  user-select: none;
+}
+
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+}
+
+main {
+  background-color: #ffffff;
+  max-width: 700px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  border: 3px solid #252525;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 5px #252525;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.instructions {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #3a3a3a;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 3rem;
+}
+
+.die {
+  border: 2px solid #252525;
+  border-radius: 5px;
+  box-shadow: 1.5px 1.5px 0px 1.5px #252525;
+  height: 75px; 
+  width: 75px;
+  cursor: pointer;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.roll-button {
+  outline: none;
+  border: none;
+  background-color: #252525;
+  color: white;
+  font: inherit;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.roll-button:hover {
+  background: linear-gradient( 103.3deg,  rgb(255, 179, 132) 30%, rgb(255, 164, 210) 55.7%, rgba(162,186,245,1) 81.8% );
+}
+
+.stats {
+  display: flex;
+}
+
+.statbox-container {
+  font-size: 1.25rem;
+  display: flex;
+  border: 2px solid #252525;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.statbox-label {
+  padding: 0.75rem;
+  background-color: #252525;
+  color: white;
+}
+
+.statbox-value {
+  text-align: center;
+  min-width: 3rem;
+  padding: 0.75rem;
+}
