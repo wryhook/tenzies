@@ -73,6 +73,18 @@ h1 {
   gap: 2rem;
 }
 
+@media (max-width: 600px) {
+  .dice-container {
+    gap: 1rem 3rem;
+    grid-template: auto auto auto auto auto / repeat(2, 1fr);
+  }
+  
+  main {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 .roll-button {
   outline: none;
   border: none;
